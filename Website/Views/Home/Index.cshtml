@@ -1,0 +1,54 @@
+﻿
+@{
+    @using Website.Models;
+    @model IEnumerable<Clients>;
+
+}
+<style>
+
+
+
+    table.center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+
+
+    <table class="center">
+
+        <tr>
+            <th>IPAddress</th>
+            <th>Name</th>
+            <th>Port</th>
+            <th>JobsCompleted</th>
+            <th>Busy</th>
+            <th>LastJobResult</th>
+            <th>Connected</th>
+
+      
+        </tr>
+        @foreach (var clients in Model)
+        {
+            <tr>
+                <td>@clients.IP_Address</td>
+                <td>@clients.Name</td>
+                <td>@clients.Port_NO</td>
+                <td>@clients.No_Of_Job_Completed</td>
+                <td>@clients.Currently_Doing_Any_Job</td>
+                <td>@clients.Result_Of_Last_Completed_Job</td>
+                <td>@clients.Connected</td>
+
+        </tr>
+        }
+    </table>
+
+
+
+
+<script>
+    window.setTimeout(function () {
+        window.location.reload();
+    }, 60000);
+</script>

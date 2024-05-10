@@ -1,0 +1,18 @@
+﻿<Window x:Class="Desktop_Application.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Desktop_Application"
+        mc:Ignorable="d"
+        Title="RegisterWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="ClientName" HorizontalAlignment="Center" Margin="0,166,0,0" TextWrapping="Wrap" Text="Client Name" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="IP_Address" HorizontalAlignment="Center" Margin="0,212,0,0" TextWrapping="Wrap" Text="IP_Address" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <Label Name="statusLabel" Content="" HorizontalAlignment="Center" Margin="0,310,0,0" VerticalAlignment="Top" Width="262"/>
+        <Button Content="Register Client" HorizontalAlignment="Center" Margin="0,249,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <TextBox Name="PortNumber" HorizontalAlignment="Center" Margin="0,189,0,0" TextWrapping="Wrap" Text="Port Number" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Back" HorizontalAlignment="Center" Margin="0,274,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
